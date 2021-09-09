@@ -1,7 +1,8 @@
 package ru.netology.service;
 
-import org.testng.annotations.Test;
-import static org.testng.Assert.assertEquals;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
     CashbackHackService service = new CashbackHackService();
@@ -30,6 +31,30 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
 
         System.out.println("For get bonuses you need buy for " + expected + " rub");
+    }
+
+    @Test
+    public void NoNeedMoreBuy1000() {
+        int amount = 1000;
+        int expected = 0;
+//        intForMessage = expected;
+        int actual = service.remain(amount);
+
+        assertEquals(expected, actual);
+
+//        System.out.println("For get bonuses you need buy for " + expected + " rub");
+    }
+
+    @Test
+    public void NoNeedMoreBuy2000() {
+        int amount = 2000;
+        int expected = 0;
+//        intForMessage = expected;
+        int actual = service.remain(amount);
+
+        assertEquals(expected, actual);
+
+//        System.out.println("For get bonuses you need buy for " + expected + " rub");
     }
 
 //    @AfterEach
