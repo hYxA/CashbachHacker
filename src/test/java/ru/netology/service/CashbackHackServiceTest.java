@@ -1,6 +1,5 @@
 package ru.netology.service;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -53,9 +52,9 @@ class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-    @AfterEach
-    public void Message(int expected) {
-        System.out.println("For get bonuses you need buy for " + expected + " rub");
-    }
+//    @AfterEach
+//    public void Message(int expected) {
+//        System.out.println("For get bonuses you need buy for " + expected + " rub");
+//    }
 
 }
